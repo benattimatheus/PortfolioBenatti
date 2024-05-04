@@ -91,7 +91,7 @@ textarea:focus{
 }
 
 #imgPerfil{
-  background-color: #ddd;
+  background-color: transparent;
   border-radius: 50%;
   height: 20vh;  /* alterado para 20% da altura da janela de visualização */
   object-fit: cover;
