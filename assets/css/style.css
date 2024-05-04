@@ -1,0 +1,624 @@
+/* Estilizações gerais */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/* img{
+  background-color: #ddd;
+  border-radius: 50%;
+  height: 20vh;  <- alterado para 20% da altura da janela de visualização
+  object-fit: cover;
+  width: 20vh;  <- alterado para 20% da altura da janela de visualização
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+/* ul {
+  list-style-type: none; 
+  padding: 0;
+} */
+
+textarea {
+  outline: none;
+  resize: none;
+  overflow-y: auto; 
+}
+
+
+.semFormatacao{
+  list-style-type: none; 
+  padding: 0;
+}
+
+.liFormatado{
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  margin-right: 10px;
+  background-color:#2a8fad;
+  color: white;
+}
+
+/* li{
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  margin-right: 10px;
+  background-color:#2a8fad;
+  color: white;
+} */
+
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+input{
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid yellow;
+}
+
+textarea{
+  outline: none;
+}
+
+textarea:focus{
+  border: 2px solid yellow;
+}
+
+/* ID's */
+#idPrincipal{
+    width: 100%;
+}
+
+#imgPerfil{
+  background-color: #ddd;
+  border-radius: 50%;
+  height: 20vh;  /* alterado para 20% da altura da janela de visualização */
+  object-fit: cover;
+  width: 20vh;  /* alterado para 20% da altura da janela de visualização */
+}
+
+#idSobreMim{
+    background-color: #2a8fad;
+    height: 100vh;  /* alterado para 100% da altura da janela de visualização */
+    padding-top: 1%;
+}
+
+#idProjetos{
+  height: 100vh;  /* alterado para 100% da altura da janela de visualização */
+  padding-top: 1%;
+}
+
+#idContato {
+  background-color: #2a8fad;
+  height: 80vh;  /* alterado para 80% da altura da janela de visualização */
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #idContato > * {
+  display: inline-block;
+  vertical-align: middle;
+} */
+
+.iconEmail,
+#textoContatos {
+  display: flex;
+  flex-direction: column; 
+}
+
+#containerContato > * {
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#textoContatos > a {
+  display: flex;
+  align-items: center;
+}
+
+#formulario input {
+  margin-bottom: 10px; /* Espaçamento entre os inputs */
+}
+
+#formulario .mensagem {
+  margin-bottom: 10px; /* Espaçamento entre o textarea e o botão */
+}
+
+#formulario .btn {
+  margin-bottom: 0; /* Remove o espaçamento entre o botão e o próximo elemento */
+}
+
+#textoContatos svg {
+  margin-right: 10px;
+}
+
+#textoContatos p{
+  margin: 0px;
+}
+
+#textoContatos{
+  margin-top: -1%;
+  width: 100%;
+  /* padding-right: 10%; */
+}
+
+#containerContato{
+  margin-left: 25%;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#containerContato > .iconEmail-h2-container {
+  display: flex;
+  align-items: center;
+}
+
+#containerContato > .iconEmail-h2-container > svg,
+#containerContato > .iconEmail-h2-container > h2 {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 0px;
+  padding-right: 5px;
+  margin: 0px;
+}
+
+#containerContato > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#agradecimento{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  color: #2a8fad;
+  font-size: xx-large;
+}
+
+#pag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#menuSuperior{
+  border-bottom: solid rgba(211, 211, 211, 0.548) 1px;
+  padding: 20px;
+  display: flex;
+}
+
+#links{
+  margin-left: 75%;
+  display: flex;
+}
+
+#textoApresentacao{
+  padding-right: 5%;
+  /* max-width: 32%; */
+}
+
+/* #foto{
+  padding-left: 5%;
+} */
+
+#textoFoto {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin: 0 auto; 
+  max-width: 55%; 
+  height: 100%;
+}
+
+#containerSobre{
+  display: flex;
+  align-items: center;
+}
+
+#habilidades{
+  margin-left: 15%;
+  /* margin-top: -4%; */
+  max-width: 45%;
+}
+
+#imagensH{
+  display: flex;
+}
+
+#rodape{
+  background-color: #1C5F73;
+  height: 20vh;  /* alterado para 20% da altura da janela de visualização */
+  padding-top: 1%;
+  text-align: center;
+}
+
+
+#rodapeTexto{
+  font-family: "Montserrat", sans-serif;
+  color:#2d8fadce;
+}
+
+/* Classes */
+.container{
+    
+}
+
+.destaque{
+  font-weight: bold;
+}
+
+.iconEmail{
+  /* padding-left: 2%; */
+  margin: 0;
+}
+
+.form{
+  padding: 15px;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  /* color: white; */
+  background-color:#47bbdf;
+}
+
+.btn{
+  border: solid white 3px;
+  border-radius: 50px;
+  width: 150px;
+  height: 60px;
+  background-color: #1C5F73;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.btn:hover{
+  background-color: #47bbdf;
+}
+
+
+/* .figuras{
+  margin-top: 2%;
+  margin-left: 13%;
+  border-radius: 10px;
+  height: 400px;
+  width: 40%;
+  background-color: #1C5F73;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.tec{
+  width: calc(33.33% - 20px); 
+    height: calc(33.33% - 20px); 
+    margin: 10px;
+    background-color: #237690; 
+    border-radius: 5px; 
+}
+
+.restante{
+  width: calc(66.66% - 20px); 
+  height: calc(66.66% - 20px); 
+} */
+
+.figuras {
+  margin-top: 2%;
+  margin-left: 13%;
+  border-radius: 10px;
+  height: 400px;
+  width: 40%;
+  background-color: #1C5F73;
+  display: flex;
+  flex-direction: row;
+}
+
+.iconeR{
+  margin-top: 3%;
+}
+
+.espaco{
+  margin-right: 35px;
+}
+
+.copyR{
+  margin-top: 1%;
+}
+
+.coluna {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tec {
+  width: calc(100% - 20px); 
+  height: calc(33.33% - 20px);
+  margin: 10px;
+  background-color: #237690;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  transition: 0.3s ease;
+}
+
+.tec:hover{
+  box-shadow: 0 4px 10px #47bbdf;
+  transform: scale(1.03);
+}
+
+.ocupar-restante {
+  width: calc(50% - 20px);
+  height: calc(100% - 20px);
+}
+
+.texto{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  line-height: 1.5em;
+  max-width: fit-content;
+}
+
+/* .imagens{
+  background-color: #ddd;
+  border-radius: 50%;
+  height: 300px;
+  object-fit: cover;
+  width: 300px;  
+} */
+
+/* .nomeLogo{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: large;
+  margin-left: 2%
+} */
+
+.computador{
+  margin-top: -10%;
+  margin-left: 2%;
+}
+
+.cabecalho{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  /* font-size: large; */
+  margin-left: 2%
+}
+
+.cabecalhoH{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.lista{
+  font-family: "Montserrat", sans-serif;
+  line-height: 2em;
+}
+
+.corNome{
+    /* color: #2ea1c4; */
+    color: #2a8fad;
+}
+
+.botaoSM{
+  margin-top: 25px;
+}
+
+.corHabilidade{
+  /* color: rgb(114, 236, 114); */
+  color: yellow;
+}
+
+.linksCabecalho{
+  color: black;
+}
+
+.botaoSobreMim {
+  border: solid #2a8fad 1px;
+  padding: 10px;
+  color: #2a8fad;
+  font-weight: bolder;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.botaoSobreMim:hover {
+  background-color: #2a8fad;
+  color: white;
+}
+
+/* CSS */
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #2a8fad;
+  color: #2a8fad;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2a8fad;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.icones{
+  display: flex;
+  align-items: center;
+  margin: 0 auto; 
+  max-width: 55%; 
+}
+
+.mais{
+  margin-top: 3%;
+  margin-left: 4%;
+}
+
+.branco{
+  color: white;
+}
+
+.apresentacao{
+    height: 93vh;  /* alterado para 93% da altura da janela de visualização */
+    font-family: "Montserrat", sans-serif;
+    /* display:inline-flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.github{
+  margin-right: 15px;
+}
+
+.sobre{
+  margin-top: 3%;
+  margin-left: 2%;
+  max-width: 50%;
+}
+
+.sobreC{
+  margin-top: 3%;
+  margin-left: 2%;
+  max-width: 50%;
+  margin-bottom: 0px;
+}
+
+.projetos{
+  margin: 0px 20px;
+}
+
+.listaProjetos{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 3%;
+}
+
+.mensagem{
+  min-height: 20%;
+  max-height: 40%;
+  padding: 15px;
+  width: 90%;
+  border-radius: 5px;
+  height: 100%;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  background-color:#47bbdf;
+}
+
+.gif{
+  max-width: 350px;
+}
+
+.listaProjetos .texto {
+  overflow: hidden;
+}
+
+.listaProjetos .texto {
+  max-width: 600px; 
+  overflow: hidden;
+}
+
+.btnMaisProjetos{
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #2a8fad;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  color: white;
+}
+
+.btnMaisProjetos:hover{
+  background-color: #1C5F73;
+}
+
+.pinguim {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15%;
+  margin-top: -6%;
+}
